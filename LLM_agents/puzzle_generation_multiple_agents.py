@@ -1,7 +1,8 @@
 import os
 import replicate
-os.environ["REPLICATE_API_TOKEN"] = "r8_LMZoyy9Hh5CebwLEVDl3Sg8KWj5rxvB3xv6YQ"
-os.environ['OPENAI_API_KEY'] = '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'
+####### add your openai key
+os.environ["REPLICATE_API_TOKEN"] = ""
+os.environ['OPENAI_API_KEY'] = ''
 from llama_index.core import (
     SimpleDirectoryReader,
     VectorStoreIndex,
