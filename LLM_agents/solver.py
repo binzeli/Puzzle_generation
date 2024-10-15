@@ -10,8 +10,10 @@ os.environ['OPENAI_API_KEY'] = 'sk-ESUfKcuFebxn7AKT05NNT3BlbkFJILLLRtrQ1DubbosT9
 
 def generate_response(message, obj_pos):
 
+    current_dir = os.path.dirname(__file__)
+    parent_dir = os.path.dirname(current_dir)
 
-    image_documents = SimpleDirectoryReader("/home/bili/Desktop/scenario_generation_llm/frames").load_data()
+    image_documents = SimpleDirectoryReader(os.path.join(parent_dir, "frames")).load_data()
 
     openai_mm_llm = OpenAIMultiModal(
             model="gpt-4o-2024-05-13", api_key='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', max_new_tokens=1500

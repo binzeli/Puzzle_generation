@@ -1,7 +1,6 @@
 import json
 import sys
-sys.path.insert(0, '..')
-sys.path.append('/home/bili/Desktop/scenario_generation_llm/create')
+
 from create.create_game import register_json_folder, register_json_str
 
 import matplotlib.pyplot as plt
@@ -52,8 +51,10 @@ CANNON_HEIGHT = 7.3
 class CreateEnv(BaseToolSpec):
     def __init__(self):
         self.basename = "Push"
-        self.starter_json_file = "/home/bili/Desktop/scenario_generation_llm/example_puzzle_layout.json"
-        self.tools_list_path = "/home/bili/Desktop/scenario_generation_llm/create/tool_documentation.json"
+        current_dir = os.path.dirname(__file__)
+        parent_dir = os.path.dirname(current_dir)
+        self.starter_json_file = os.path.join(parent_dir, "example_puzzle_layout.json")
+        self.tools_list_path = os.path.join(parent_dir, "create", "tool_documentation.json")
         with open(self.tools_list_path, 'r') as file:
             self.tools_list = json.load(file)["tools"]
         with open(self.starter_json_file, 'r') as json_file:
@@ -68,15 +69,15 @@ class CreateEnv(BaseToolSpec):
             register_json_str(starter_json_str)
         except:
             pass
-        #self.visualization_path = "/home/bili/Desktop/scenario_generation_llm/other_images/env10.jpg"
-        self.animation_path = "/home/bili/Desktop/scenario_generation_llm/data/animations/push_start_demo.mp4"
+        self.animation_path = os.path.join(parent_dir, "data", "animations", "push_start_demo.mp4")
         self.gap_radius = 6
         self.tool_visualized = False
         self.tools = {}
-        self.frames_path = "/home/bili/Desktop/scenario_generation_llm/frames"
-        self.frame = "/home/bili/Desktop/scenario_generation_llm/frame.jpg"
+        self.frames_path = os.path.join(parent_dir, "frames")
+        self.frame = os.path.join(parent_dir, "frame.jpg")
         self.tool_message = ''
         self.ball_message = ''
+
 
 
     spec_functions = ["place_red_ball_blue_ball_goal", "place_floor", "place_wall", "adjust_red_ball_position", "adjust_goal_position",

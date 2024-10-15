@@ -33,13 +33,16 @@ CANNON_HEIGHT = 7.3
 
 class CheckToolLocation(BaseToolSpec):
     def __init__(self):
-        self.starter_json_file = "/home/bili/Desktop/gen_env_llm/data/starts/push_start.json"
-        self.predefined_actions_json = "/home/bili/Desktop/gen_env_llm/data/predef_actions/PushStart/q3.json"
+        current_dir = os.path.dirname(__file__)
+        parent_dir = os.path.dirname(current_dir)
+
+        self.starter_json_file = os.path.join(parent_dir, ,"data", 'starts", push_start.json")
+        self.predefined_actions_json = os.path.join(parent_dir, "data", "predef_actions", "PushStart", "q3.json")
 
     spec_functions = ["check_tool_location"]
     
     def get_collision_data(self,starter_json_file,predefined_actions_json,final_action,auto_skip=True,max_steps=80,gap_radius=6):
-        with open("/home/bili/Desktop/gen_env_llm/create/tool_documentation.json", 'r') as file:
+        with open(os.path.join(parent_dir, "create", "tool_documentation.json"), 'r') as file:
             tools_list = json.load(file)
         with open(starter_json_file, 'r') as json_file:
             starter_json = json.load(json_file)

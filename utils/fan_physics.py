@@ -1,6 +1,13 @@
 import numpy as np
 import sys
-sys.path.insert(0,'/home/bili/Desktop/gen_env_llm/utils')
+import os
+current_dir = os.path.dirname(__file__)
+
+parent_dir = os.path.dirname(current_dir)
+
+utils_path = os.path.join(parent_dir, 'utils')
+
+sys.path.insert(0, utils_path)
 from coords_utils import edge_equations
 
 FAN_HEIGHT = 10.0

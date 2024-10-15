@@ -3,9 +3,12 @@ import gym
 from PIL import Image
 from create.create_game import register_json_folder, register_json_str
 import json
+current_dir = os.path.dirname(__file__)
+parent_dir = os.path.dirname(current_dir)
 
-starter_json_file =  "/home/bili/Desktop/scenario_generation_llm/example_puzzle_layout.json"
-visualization_path = "/home/bili/Desktop/scenario_generation_llm/example_puzzle.jpg"
+starter_json_file = os.path.join(parent_dir, "example_puzzle_layout.json")
+
+visualization_path = os.path.join(parent_dir, "example_puzzle.jpg")
 with open(starter_json_file, 'r') as json_file:
             env_json = json.load(json_file)
 starter_json_str = json.dumps(env_json)

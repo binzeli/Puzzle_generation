@@ -51,7 +51,11 @@ from llama_index.core.agent import Task
 Settings.llm = OpenAI(temperature=0, model="gpt-3.5-turbo")
 
 tool_details_retriever = ToolDetailsRetriever.get_tool()
-create_env = CreateEnv("/home/bili/Desktop/scenario_generation_llm/puzzle_solution_scenarios/env1.json")
+
+current_dir = os.path.dirname(__file__)
+parent_dir = os.path.dirname(current_dir)
+
+create_env = CreateEnv(os.path.join(parent_dir, "puzzle_solution_scenarios", "env1.json"))
 create_env_tools = create_env.to_tool_list()
 
 
@@ -72,8 +76,10 @@ agent = AgentRunner(react_step_engine)
 
 query_str = ("Place tools to help the blue ball reach the red ball and push the red ball to the goal. ")
 
+current_dir = os.path.dirname(__file__)
+parent_dir = os.path.dirname(current_dir)
 
-image_document = ImageDocument(image_path="/home/bili/Desktop/scenario_generation_llm/puzzle_solution_scenarios/example_puzzle.jpg")
+image_document = ImageDocument(image_path=os.path.join(parent_dir, "puzzle_solution_scenarios", "example_puzzle.jpg"))
 
 task = agent.create_task(
     query_str,

@@ -1,7 +1,5 @@
 import json
 import sys
-sys.path.insert(0, '..')
-sys.path.append('/home/bili/Desktop/scenario_generation_llm/create')
 from create.create_game import register_json_folder, register_json_str
 
 import matplotlib.pyplot as plt
@@ -46,9 +44,12 @@ class CreateEnv(BaseToolSpec):
     def __init__(self, json_file):
         self.basename = "Push"
         self.starter_json_file =  json_file
-        self.predefined_actions_json = "/home/bili/Desktop/scenario_generation_llm/data/predef_actions/PushStart/q3.json"
-        self.tools_list_path = "/home/bili/Desktop/scenario_generation_llm/create/tool_documentation.json"
-        self.animation_path = "/home/bili/Desktop/scenario_generation_llm/data/animations/push_start_demo.mp4"
+
+        current_dir = os.path.dirname(__file__)
+        parent_dir = os.path.dirname(current_dir)
+        self.predefined_actions_json = os.path.join(parent_dir, "data", "predef_actions", "PushStart", "q3.json")
+        self.tools_list_path = os.path.join(parent_dir, "create", "tool_documentation.json")
+        self.animation_path = os.path.join(parent_dir, "data", "animations", "push_start_demo.mp4")
         with open(self.tools_list_path, 'r') as file:
             self.tools_list = json.load(file)["tools"]
         with open(self.starter_json_file, 'r') as json_file:
@@ -61,12 +62,11 @@ class CreateEnv(BaseToolSpec):
             register_json_str(starter_json_str)
         except:
             pass
-        #self.visualization_path = "/home/bili/Desktop/gen_env_llm_new2/other_images/env8.jpg"
         self.gap_radius = 6
         self.tool_visualized = False
         self.tools = {}
-        self.frames_path = "/home/bili/Desktop/scenario_generation_llm/frames"
-        self.frame = "/home/bili/Desktop/scenario_generation_llm/frame.jpg"
+        self.frames_path = os.path.join(parent_dir, "frames")
+        self.frame = os.path.join(parent_dir, "frame.jpg")
         self.tool_message = ''
         self.ball_message = ''
 

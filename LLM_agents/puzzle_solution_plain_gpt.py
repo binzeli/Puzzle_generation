@@ -10,7 +10,10 @@ os.environ['OPENAI_API_KEY'] = 'sk-ESUfKcuFebxn7AKT05NNT3BlbkFJILLLRtrQ1DubbosT9
 
 def generate_response():
 
-    image_documents = SimpleDirectoryReader(input_files=["/home/bili/Desktop/scenario_generation_llm/puzzle_solution_scenarios/env2.png"]).load_data()
+    current_dir = os.path.dirname(__file__)
+    parent_dir = os.path.dirname(current_dir)
+
+    image_documents = SimpleDirectoryReader(input_files=[os.path.join(parent_dir, "puzzle_solution_scenarios", "example_puzzle.jpg")]).load_data()
 
     openai_mm_llm = OpenAIMultiModal(
             model="gpt-4o-2024-05-13", api_key='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', max_new_tokens=1500

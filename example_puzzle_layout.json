@@ -1,7 +1,7 @@
 {
     "name": "NavigateStart",
-    "target": "[0.001999999999999988,0.18000000000000002]",
-    "goal": "[-0.6,-0.5]",
+    "target": "[-0.5,0.0]",
+    "goal": "[-0.45,-0.7]",
     "rnd": {
         "_marker_ball:0": "[0,0]",
         "target,medium_floor:0": "[0,0]",
@@ -18,14 +18,14 @@
         },
         {
             "name": "medium_floor",
-            "pos": "[0.001999999999999988,0.07000000000000002]",
+            "pos": "[-0.5,-0.11]",
             "id": 0,
             "thickness": 1,
             "color": "STEELBLUE"
         },
         {
             "name": "medium_floor",
-            "pos": "[-0.6,-0.61]",
+            "pos": "[-0.45,-0.8099999999999999]",
             "id": 1,
             "thickness": 1,
             "color": "STEELBLUE"

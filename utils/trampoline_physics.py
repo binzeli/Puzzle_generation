@@ -1,6 +1,13 @@
 import numpy as np
 import sys
-sys.path.insert(0,'/home/bili/Desktop/gen_env_llm/utils')
+import os
+current_dir = os.path.dirname(__file__)
+
+parent_dir = os.path.dirname(current_dir)
+
+utils_path = os.path.join(parent_dir, 'utils')
+
+sys.path.insert(0, utils_path)
 
 def trampoline_exit_details(trampoline_angle, v0_x, v0_y, trampoline_elasticity):
     if trampoline_angle > np.pi/2:

@@ -56,8 +56,10 @@ agent = AgentRunner(react_step_engine)
 query_str = ("Design a puzzle where the blue ball on the right needs to push the red ball down to the goal on the left.")
 
 
+current_dir = os.path.dirname(__file__)
+parent_dir = os.path.dirname(current_dir)
 
-image_document = ImageDocument(image_path="/home/bili/Desktop/scenario_generation_llm/puzzle_solution_scenarios/example_puzzle.jpg")
+image_document = ImageDocument(image_path=os.path.join(parent_dir, "puzzle_solution_scenarios", "example_puzzle.jpg"))
 
 task = agent.create_task(
     query_str,

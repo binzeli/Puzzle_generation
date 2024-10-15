@@ -2,9 +2,13 @@ from llama_index.llms.openai import OpenAI
 from llama_index.core.indices.struct_store import JSONQueryEngine
 from llama_index.core.tools import QueryEngineTool, ToolMetadata
 import json
+import os
 
 class ToolDetailsRetriever:
-    json_path = "/home/bili/Desktop/gen_env_llm/create/tool_documentation.json"
+
+    current_dir = os.path.dirname(__file__)
+    parent_dir = os.path.dirname(current_dir)
+    json_path = os.path.join(parent_dir, "create", "tool_documentation.json")
     with open(json_path, 'r') as file:
         json_value = json.load(file)
     
