@@ -1,0 +1,49 @@
+{
+  "name": "Push_Trapped",
+  "lvl_type": "marker",
+  "target": "[0.2, 0.25 + OFFSET]",
+  "goal": "[0.6666666666666667, -0.37573294912548016]",
+  "rnd": {
+    "marker_ball:0": "[uniform(0,0), uniform(0,0)]",
+    "target,medium_floor:0": "[uniform(0,0), uniform(0,0)]",
+    "goal,medium_floor:1": "[uniform(0,0), uniform(0,0)]"
+  },
+  "env": [
+    {
+      "name": "marker_ball",
+      "pos": [
+        0.6,
+        0.9
+      ],
+      "id": 0
+    },
+    {
+      "name": "medium_floor",
+      "pos": "[0.2, 0.25]",
+      "id": 0,
+      "thickness": 1,
+      "color": "STEELBLUE"
+    },
+    {
+      "name": "floor",
+      "pos": "[0.579960650076814, -0.518590091982623]",
+      "length": 7.283305393547629,
+      "id": 1
+    },
+    {
+      "name": "ramp",
+      "pos": "[0.6415746511732812, -0.13250540494229546]",
+      "length": 4.372473093539227,
+      "angle": 1.0678088915210946,
+      "id": 2,
+      "thickness": 0.5
+    },
+    {
+      "name": "wall",
+      "pos": "[0.8095238095238095, -0.23131604287446095]",
+      "length": 12.131020125085605,
+      "id": 3
+    }
+  ]
+}
+

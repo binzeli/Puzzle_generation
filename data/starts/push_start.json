@@ -1,0 +1,26 @@
+{
+    "name": "PushStart",
+    "lvl_type": "marker",
+    "target": "[0.2, 0.25 + OFFSET]",
+    "goal": "[-1,-1]",
+    "rnd": {
+        "marker_ball:0": "[uniform(0,0), uniform(0,0)]",
+        "target,medium_floor:0": "[uniform(0,0), uniform(0,0)]",
+        "goal,medium_floor:1": "[uniform(0,0), uniform(0,0)]"
+    },
+    "env": [
+        {
+            "name": "marker_ball",
+            "pos": "[0.6, 0.9]",
+            "id": 0
+        },
+        {
+            "name": "medium_floor",
+            "pos": "[0.2, 0.25]",
+            "id": 0,
+            "thickness": 1,
+            "color": "STEELBLUE"
+        }
+    ]
+}
+

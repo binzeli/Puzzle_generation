@@ -1,0 +1,2 @@
+An environment where a horizontal trampoline with high bounce (elasticity greater than 1) should be used as the last step
+An environment where a 15 degree angled trampoline with high bounce (elasticity greater than 1) should be used as the last step

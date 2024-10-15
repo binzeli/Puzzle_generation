@@ -1,0 +1,31 @@
+{
+    "name": "NavigateStart",
+    "target": "[0.1, -0.35 + OFFSET]",
+    "goal": "[-1,-1]",
+    "rnd": {
+            "_marker_ball:0": "[0,0]",
+            "target,medium_floor:0": "[0,0]",
+            "goal,medium_floor:1": "[0,0]"
+        },
+    "env": [
+        {
+            "name": "marker_ball",
+            "pos": "[-0.6, 0.9]",
+            "id": 0
+        },
+        {
+            "name": "medium_floor",
+            "pos": "[0.1, -0.35]",
+            "id": 0,
+            "thickness": 1,
+            "color": "STEELBLUE"
+        },
+        {
+            "name": "floor",
+            "pos": "[-0.5, 0.1]",
+            "length": 40,
+            "thickness": 1,
+            "color": "STEELBLUE"
+        }
+    ]
+}

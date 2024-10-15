@@ -1,0 +1,18 @@
+## Towards Scenario Generation: A Multi-agent Reasoning Framework for Generating Physics Puzzles
+
+We utilized the CREATE 2D physics puzzle environment as a testbed for LLM-driven 2D physics puzzle generation. We devised a multi-agent ReAct framework that integrates reasoning with action feedback loops. This framework enables LLMs to interact dynamically with their environment, adapting actions based on real-time feedback. By leveraging the distinct expertise of individual agents, our framework preserves the complex reasoning pathways required for solving and generating puzzles, which was impossible with basic prompting or single-agent approaches.
+
+## Prompts
+The context and step-by-step guidance provided to the ReAct agent can be found in the [utils](./utils) folder.
+Specifically, the following four files contain the context for the ReAct approaches:
+- `system_header_prompt_puzzle_generate_multiple_agents.py`
+- `system_header_prompt_puzzle_generate_one_agent.py`
+- `system_header_prompt_puzzle_solve_multiple_agents.py`
+- `system_header_prompt_puzzle_solve_one_agent.py`
+
+
+## Run Experiments
+The files for running the three LLM approaches are in the [LLM_agents](./LLM_agents) folder. Each of the three approaches has two files corresponding to the puzzle solution task and puzzle generation task.
+
+## Experiment Results
+The simulation images for each of the five attempts for all three approaches can be found in the [Experiment Results](./Experiment%20Results) folder.

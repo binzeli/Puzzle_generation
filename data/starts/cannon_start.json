@@ -1,0 +1,45 @@
+{
+    "name": "CannonStart",
+    "lvl_type": "marker",
+    "place_walls": false,
+    "marker_must_hit": true,
+    "target": "[0.4, 0.0 + OFFSET]",
+    "goal": "[-1, -1]",
+    "rnd": {
+        "marker_ball": "[0,0]",
+        "target,short_floor": "[0,0]",
+        "goal": "[0,0]"
+    },
+    "env": [
+        {
+           "name": "marker_ball",
+           "pos": [0.8, 0.75]
+        },
+        {
+            "name": "wall",
+            "pos": "[1.0, 0.0]",
+            "length": 90,
+            "color": "LIGHTSTEELBLUE"
+        }, 
+        {
+            "name": "floor",
+            "pos": "[0.0, 1.0]",
+            "length": 90,
+            "color": "LIGHTSTEELBLUE"
+        },
+        {
+            "name": "wall",
+            "pos": "[-0.1, 0.35]",
+            "length": 55.0,
+            "thickness": 1.0,
+            "color": "STEELBLUE"
+        },
+        {
+            "name": "short_floor",
+            "pos": "[0.4, 0.0]",
+            "thickness": 1.0,
+            "color": "STEELBLUE"
+        }
+                                                                                                                                        ]
+}
+

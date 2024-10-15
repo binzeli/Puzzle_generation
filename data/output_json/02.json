@@ -1,0 +1,30 @@
+{
+    "name": "Prompt02Trampoline",
+    "target": "[0.2, 0.0]", 
+    "goal": "[-0.9, -0.05]",
+    "env": [
+        {
+            "name": "marker_ball",
+            "pos": "[0.6, 0.5]",
+            "id": 0
+        },
+        {
+            "name": "medium_floor",
+            "pos": "[0.2, -0.1]",
+            "thickness": 1.0,
+            "color": "STEELBLUE",
+            "id": 1
+        },
+        {
+            "name": "short_floor",
+            "pos": "[-0.9, -0.15]",
+            "thickness": 1.0,
+            "color": "GREEN",
+            "id": 2
+        }
+    ],
+    "rnd": {
+        "marker_ball:0": "[uniform(0,0), uniform(0,0)]",
+        "target": "[uniform(0,0), uniform(0,0)]"
+    }
+}

@@ -1,0 +1,319 @@
+RAMP TOOLS
+
+    General Functionality:
+    The 'Ramp' tools simulate inclined surfaces over which objects can roll or slide. These tools find applications in physics simulations, gaming environments, and engineering analyses, where the behavior of objects on inclined planes requires modeling.
+
+    Modifications in Parameters:
+
+    Elasticity: Controls the surface's "bounciness" upon object collisions, with values set to 0.1, 0.3, and 0.5.
+    Angle: Represents the ramp's inclination angle, ranging from 0 to 180 degrees (exclusive). The step size is determined by the seg_angle_gap parameter, which is set to 15.
+    Length: Specifies the ramp's length, ranging from 6 to 22 units. The step size is 4 units.
+    Friction: Governs the resistance offered by the ramp surface to object motion, with a constant value of 1.0 for all ramps.
+    
+    Values for Properties:
+
+    Elasticity: 0.1, 0.3, 0.5.
+    Friction: 1.0 (constant for all ramps).
+    Angle Range: From 0 to 180 degrees (exclusive), with a step size of 15.
+    Length Range: From 6 to 22 units, with a step size of 4 units.
+
+CIRCLE TOOLS
+
+    General Functionality: Circle tools represent fixed or bouncy balls, providing options for elasticity and radius. These tools are suitable for simulating spherical objects with varying properties, such as balls, in physics simulations or gaming environments.
+
+    Modifications in Parameters:
+
+    Elasticity: Allows control over the bounciness of the ball upon collisions, with values ranging from 0.1 to 0.5.
+    Radius: Specifies the radius of the ball, which determines its size within the simulation environment. The radius varies from 3.0 to 9.0 units.
+    
+    Values for Properties:
+
+    Elasticity: 0.1, 0.2, 0.3, 0.4, 0.5.
+    Radius Range: From 3.0 to 9.0 units.
+
+BOUNCY BALL TOOLS
+
+    General Functionality: Bouncy ball tools are similar to fixed balls but offer a wider range of elasticity values. This broader range enables the simulation of highly elastic materials, enhancing the realism of interactions within the simulation.
+
+    Modifications in Parameters:
+
+    Elasticity: Expanded range from 0.8 to 1.2, providing more options for simulating highly elastic materials.
+    
+    Values for Properties:
+
+    Elasticity: 0.8, 0.9, 1.0, 1.1, 1.2.
+
+
+BOX TOOLS
+
+    General Functionality: Box tools represent fixed or bouncy rectangular objects, allowing for the simulation of interactions involving boxes or similar structures. They provide options for controlling elasticity and size parameters.
+
+    Modifications in Parameters:
+
+    Elasticity: Similar to circle tools, providing elasticity values from 0.1 to 0.5.
+    Size: Specifies the length of one side of the box, ranging from 5.0 to 16.0 units.
+    
+    Values for Properties:
+
+    Elasticity: 0.1, 0.2, 0.3, 0.4, 0.5.
+    Size Range: From 5.0 to 16.0 units.
+
+
+BOUNCY BOX TOOLS
+
+    General Functionality: Bouncy box tools are similar to fixed box tools but offer a wider range of elasticity values. This expanded range enables the simulation of highly elastic box materials, providing more dynamic interactions within the simulation.
+
+    Modifications in Parameters:
+
+    Elasticity: Expanded range from 0.8 to 1.2, offering more options for simulating highly elastic box materials.
+    
+    Values for Properties:
+
+    Elasticity: 0.8, 0.9, 1.0, 1.1, 1.2.
+    This documentation provides an overview of each tool type, its general functionality, modifications in parameters, and the values associated with each property.
+
+TRAMPOLINE TOOLS
+
+    General Functionality: A generic trampoline object capable of being positioned at different angles within the simulation. It is defined by its position, length, and angle of inclination, alongside specific physical properties like elasticity and friction. The angle is adjusted to ensure the trampoline's orientation is always logical within the simulation, with an additional image representation for visual accuracy. .
+
+    Modifications in Parameters:
+
+    Elasticity: Controls the bounciness or rebound effect of the trampoline surface upon object collisions. The available elasticity values are 0.8, 1.0, and 1.2.
+    Angle: Represents the inclination angle of the trampoline surface, influencing the trajectory of objects interacting with it. The angle range is typically set to 12 degrees.
+    Length: Specifies the length or size of the trampoline surface, determining its extent within the simulation environment. The length typically ranges from 5 units.
+    
+    Values for Properties:
+
+    Elasticity: 0.8, 1.0, 1.2.
+    Angle: Fixed at 12 degrees.
+    Length: Typically set to 5 units.
+
+TRIANGLE TOOLS
+
+    General Functionality: Triangle tools represent triangular objects within a simulation environment. These tools allow for the creation of fixed or bouncy triangles with varying properties such as elasticity, size, and orientation. They find applications in physics simulations, gaming environments, and engineering analyses involving triangular structures or obstacles.
+
+    Modifications in Parameters:
+
+    Elasticity: Controls the bounciness or deformation behavior of the triangle upon collisions. The available elasticity values are 0.1, 0.3, 0.5 for fixed triangles, and 0.8, 1.0, 1.2 for bouncy triangles.
+    Size: Specifies the size or dimensions of the triangle, typically ranging from 3.0 to 9.0 units.
+    Angle: Represents the orientation or inclination angle of the triangle, influencing its interaction with other objects in the simulation. The angle range is from 0 to 120 degrees, with the step size determined by the triangle_angle_gap parameter.
+
+    Values for Properties:
+
+    Elasticity (Fixed Triangle): 0.1, 0.3, 0.5.
+    Size Range: From 3.0 to 9.0 units.
+    Angle Range: From 0 to 120 degrees.
+
+BOUNCY TRIANGLE TOOLS
+
+    General Functionality: Bouncy triangle tools are similar to fixed triangles but offer a wider range of elasticity values. This broader range enables the simulation of highly elastic materials, enhancing the realism of interactions within the simulation involving triangular objects.
+
+    Modifications in Parameters:
+
+    Elasticity: Expanded range from 0.8 to 1.2, providing more options for simulating highly elastic triangle materials.
+    Size: Specifies the size or dimensions of the triangle, typically ranging from 3.0 to 9.0 units.
+    Angle: Represents the orientation or inclination angle of the triangle, influencing its interaction with other objects in the simulation. The angle range is from 0 to 120 degrees, with the step size determined by the triangle_angle_gap parameter.
+
+    Values for Properties:
+
+    Elasticity: 0.8, 1.0, 1.2.
+    Size Range: From 3.0 to 9.0 units.
+    Angle Range: From 0 to 120 degrees.
+
+SQUARE TOOLS
+
+    General Functionality: Square tools represent square-shaped objects within a simulation environment. These tools allow for the creation of fixed squares with varying properties such as elasticity, size, and orientation. They find applications in physics simulations, gaming environments, and engineering analyses involving square structures or obstacles.
+
+    Modifications in Parameters:
+
+    Elasticity: Controls the bounciness or deformation behavior of the square upon collisions. The available elasticity values are 0.1, 0.3, and 0.5.
+    Size: Specifies the size or dimensions of the square, typically ranging from 3.0 to 9.0 units.
+    Angle: Represents the orientation or rotation angle of the square. As squares have equal sides, the angle parameter mainly affects their orientation rather than their shape. The angle range is from 0 to 90 degrees, excluding 45 degrees.
+    
+    Values for Properties:
+
+    Elasticity: 0.1, 0.3, 0.5.
+    Size Range: From 3.0 to 9.0 units.
+    Angle Range: From 0 to 90 degrees, excluding 45 degrees.
+
+BOUNCY SQUARE TOOLS
+
+    General Functionality: Bouncy square tools are similar to fixed squares but offer a wider range of elasticity values. This broader range enables the simulation of highly elastic square materials, enhancing the realism of interactions within the simulation involving square-shaped objects.
+
+    Modifications in Parameters:
+
+    Elasticity: Expanded range from 0.8 to 1.2, providing more options for simulating highly elastic square materials.
+    Size: Specifies the size or dimensions of the square, typically ranging from 3.0 to 9.0 units.
+    Angle: Represents the orientation or rotation angle of the square. As squares have equal sides, the angle parameter mainly affects their orientation rather than their shape. The angle range is from 0 to 90 degrees.
+
+    Values for Properties:
+
+    Elasticity: 0.8, 1.0, 1.2.
+    Size Range: From 3.0 to 9.0 units.
+    Angle Range: From 0 to 90 degrees.
+
+PENTAGON TOOLS
+
+    General Functionality: Pentagon tools represent pentagon-shaped objects within a simulation environment. These tools allow for the creation of fixed pentagons with varying properties such as elasticity, size, and orientation. They find applications in physics simulations, gaming environments, and engineering analyses involving pentagon structures or obstacles.
+
+    Modifications in Parameters:
+
+    Elasticity: Controls the bounciness or deformation behavior of the pentagon upon collisions. The available elasticity values are 0.1, 0.3, and 0.5.
+    Size: Specifies the size or dimensions of the pentagon, typically ranging from 3.0 to 9.0 units.
+    Angle: Represents the orientation or rotation angle of the pentagon. The angle range is from 0 to 72 degrees.
+    
+    Values for Properties:
+
+    Elasticity: 0.1, 0.3, 0.5.
+    Size Range: From 3.0 to 9.0 units.
+    Angle Range: From 0 to 72 degrees.
+
+BOUNCY PENTAGON TOOLS
+
+    General Functionality: Bouncy Pentagon tools represent pentagon-shaped objects within a simulation environment that exhibit elasticity upon collision. These tools are designed to simulate dynamic interactions where pentagons bounce or deform upon contact with other objects. They are utilized in various simulation scenarios, including physics simulations, gaming environments, and engineering analyses requiring dynamic pentagon behavior.
+
+    Modifications in Parameters:
+
+    Elasticity: Controls the degree of bounciness or deformation exhibited by the pentagon upon collisions. Available elasticity values are 0.8, 1.0, and 1.2.
+    Size: Specifies the size or dimensions of the pentagon, typically ranging from 3.0 to 9.0 units.
+    Angle: Represents the orientation or rotation angle of the pentagon. The angle range is from 0 to 72 degrees.
+    
+    Values for Properties:
+
+    Elasticity: 0.8, 1.0, 1.2.
+    Size Range: From 3.0 to 9.0 units.
+    Angle Range: From 0 to 72 degrees.
+
+HEXAGON TOOLS
+
+    General Functionality: Hexagon tools represent hexagonal-shaped objects within a simulation environment. These tools simulate the behavior of hexagonal objects, including their interaction with other elements and their response to external forces. Hexagon tools find applications in various domains such as physics simulations, gaming environments, and engineering analyses where hexagonal shapes are relevant.
+
+    Fixed Hexagon Tools:
+
+    Modifications in Parameters:
+
+    Elasticity: Determines the degree of elasticity or stiffness of the hexagon upon collision with other objects. Available elasticity values are 0.1, 0.3, and 0.5.
+    Size: Specifies the size or dimensions of the hexagon, typically ranging from 3.0 to 9.0 units.
+    Angle: Represents the orientation or rotation angle of the hexagon. The angle range is from 0 to 60 degrees.
+    
+    Values for Properties:
+
+    Elasticity: 0.1, 0.3, 0.5.
+    Size Range: From 3.0 to 9.0 units.
+    Angle Range: From 0 to 60 degrees.
+
+BOUNCY HEXAGON TOOLS
+
+    General Functionality: Bouncy Hexagon tools are similar to fixed hexagon tools but exhibit elasticity or bouncing behavior upon collisions. These tools are designed to simulate dynamic interactions where hexagons bounce or deform upon contact with other objects. They are utilized in scenarios requiring dynamic hexagon behavior, such as in physics simulations, gaming environments, and engineering analyses.
+
+    Modifications in Parameters:
+
+    Elasticity: Controls the degree of bounciness or deformation exhibited by the hexagon upon collisions. Available elasticity values are 0.8, 1.0, and 1.2.
+    Size: Specifies the size or dimensions of the hexagon, typically ranging from 3.0 to 9.0 units.
+    Angle: Represents the orientation or rotation angle of the hexagon. The angle range is from 0 to 60 degrees.
+    
+    Values for Properties:
+
+    Elasticity: 0.8, 1.0, 1.2.
+    Size Range: From 3.0 to 9.0 units.
+    Angle Range: From 0 to 60 degrees.
+
+HINGE TOOLS
+
+Hinge:
+
+    Functionality: Hinge tools simulate the behavior of simple pivoted connections that allow rotation around a fixed axis. These tools are used to model mechanisms such as doors, gates, and other swinging structures.
+    Parameters:
+    Length: Specifies the length of the hinge arm.
+    Friction: Governs the resistance to motion at the hinge point.
+    Values for Properties:
+    Length Range: From 6.0 to 34.5 units.
+    Friction Range: From 1.0 to 1.1.
+
+Hinge_Constrained:
+
+    Functionality: Hinge_Constrained tools represent hinges with limitations on their range of motion. These tools allow setting maximum angles for rotation, providing constrained movement compared to regular hinges.
+    Parameters:
+    Length: Specifies the length of the hinge arm.
+    Max Angle: Sets the maximum angle of rotation.
+    Friction: Governs the resistance to motion at the hinge point.
+    Values for Properties:
+    Length Range: From 12.0 to 21.0 units.
+    Max Angle Range: From 5.0 to 90.0 degrees.
+    Friction Range: From 1.0 to 1.1.
+
+SEE-SAW TOOLS
+
+    Functionality: See-Saw tools simulate the behavior of a balanced plank or board that pivots on a central point. These tools are commonly used in playgrounds and recreational areas.
+
+    Parameters:
+    Length: Specifies the length of the see-saw plank.
+    Max Angle: Sets the maximum angle of rotation.
+    On Left: Specifies whether the heavier side is on the left (True) or right (False).
+    Ball Mass: Represents the mass of the ball placed on the see-saw.
+    Friction: Governs the resistance to motion at the pivot point.
+    Values for Properties:
+    Length Range: From 12.0 to 21.0 units.
+    Max Angle Range: From 5.0 to 60.0 degrees.
+    Ball Mass Options: 2.0, 6.0, 10.0, 14.0.
+    Friction: Constant value of 1.0.
+
+CANNON TOOLS
+
+    Functionality: Cannon tools simulate the behavior of cannons or projectile launchers. These tools are capable of launching objects with a specified force and angle.
+
+    Parameters:
+    Angle: Specifies the angle of the cannon's barrel.
+    Force: Determines the strength of the launch.
+
+    Values for Properties:
+    Angle Range: From 0.0 to 360.0 degrees.
+    Force Range: From 60.0 to 120.0 units.
+
+FAN TOOLS
+
+    Functionality: Fan tools simulate the behavior of fans or propellers. These tools generate airflow in a specified direction with a given force.
+
+    Parameters:
+    Angle: Specifies the direction of airflow.
+    Force: Determines the strength of the airflow.
+
+    Values for Properties:
+    Angle Range: From 0.0 to 360.0 degrees.
+    Force Range: From 30.0 to 120.0 units.
+
+BELT TOOLS
+
+    Functionality: Belt tools simulate conveyor belts or moving platforms. These tools move objects along a specified length with a given velocity.
+
+    Parameters:
+    Length: Specifies the length of the belt or moving platform.
+    Velocity: Determines the speed of movement.
+
+    Values for Properties:
+    Length Range: From 6.0 to 24.0 units.
+    Velocity Range: From -6.0 to 6.0 units.
+
+FUNNEL TOOLS
+
+    Functionality: Funnel tools simulate funnel-shaped objects. These tools can vary in size and orientation.
+
+    Parameters:
+    Angle: Specifies the orientation of the funnel.
+    Size: Determines the dimensions of the funnel.
+
+    Values for Properties:
+    Angle Range: From 0.0 to 360.0 degrees.
+    Size Range: From 3.0 to 11.0 units.
+
+BUCKET TOOLS
+
+    Functionality: Bucket tools simulate containers or receptacles resembling buckets. These tools can vary in size and orientation.
+
+    Parameters:
+    Angle: Specifies the orientation of the bucket.
+    Size: Determines the dimensions of the bucket.
+
+    Values for Properties:
+    Angle Range: From 0.0 to 360.0 degrees.
+    Size Range: From 3.0 to 11.0 units.

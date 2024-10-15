@@ -1,0 +1,39 @@
+{
+    "name": "NavigateStart",
+    "target": "[0.3, -0.29]",
+    "goal": "[-0.1, -0.59]",
+    "rnd": {
+        "_marker_ball:0": "[0,0]",
+        "target,medium_floor:0": "[0,0]",
+        "goal,medium_floor:1": "[0,0]"
+    },
+    "target_sec_goals": [
+        "[0.1, -0.29]"
+    ],
+    "env": [
+        {
+            "name": "marker_ball",
+            "pos": "[-0.6, 0.85]",
+            "id": 0
+        },
+        {
+            "name": "floor",
+            "pos": "[0, 0]",
+            "color": "STEELBLUE"
+        },
+        {
+            "name": "medium_floor",
+            "pos": "[0.3, -0.4]",
+            "id": 0,
+            "thickness": 1,
+            "color": "STEELBLUE"
+        },
+        {
+            "name": "medium_floor",
+            "pos": "[-0.1, -0.7]",
+            "id": 1,
+            "thickness": 1,
+            "color": "STEELBLUE"
+        }
+    ]
+}
