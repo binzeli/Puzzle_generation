@@ -14,6 +14,10 @@ The prompt for the Designer and Solver agent are in the [LLM_agents](./LLM_agent
 
 ## Actions that ReAct agent have access to
 The functions for all actions that an ReAct agent have access to are in the [LLM_tools](./LLM_tools) folder.
+- `puzzle_generate_multi_agents.py`
+- `puzzle_generate_one_agent.py`
+- `puzzle_sol_multi_agents.py`
+- `puzzle_sol_one_agent.py`
 
 ## Run Experiments
 The files for running the three LLM approaches are in the [LLM_agents](./LLM_agents) folder. Each of the three approaches has two files corresponding to the puzzle solution task and puzzle generation task.
