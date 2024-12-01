@@ -13,7 +13,7 @@ Specifically, the following four files contain the context for the ReAct approac
 The prompt for the Designer and Solver agent are in the [LLM_agents](./LLM_agents) folder.
 
 ## Actions that ReAct agent have access to
-The functions for all actions that an ReAct agent have access to are in the [LLM_tools](./LLM_tool) folder.
+The functions for all actions that an ReAct agent have access to are in the [LLM_tools](./LLM_tools) folder.
 
 ## Run Experiments
 The files for running the three LLM approaches are in the [LLM_agents](./LLM_agents) folder. Each of the three approaches has two files corresponding to the puzzle solution task and puzzle generation task.
