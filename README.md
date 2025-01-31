@@ -3,7 +3,7 @@
 We utilized the CREATE 2D physics puzzle environment as a testbed for LLM-driven 2D physics puzzle generation. We devised a multi-agent ReAct framework that integrates reasoning with action feedback loops. This framework enables LLMs to interact dynamically with their environment, adapting actions based on real-time feedback. By leveraging the distinct expertise of individual agents, our framework preserves the complex reasoning pathways required for solving and generating puzzles, which was impossible with basic prompting or single-agent approaches.
 
 ## Example output from LLM
-An example of the response from LLM is provided in [example_output](./example_output/).
+An example of the response from LLM is provided in [example_output](./example_output.pdf).
 
 ## Prompts
 The context and step-by-step guidance provided to the ReAct agent can be found in the [utils](./utils) folder.
